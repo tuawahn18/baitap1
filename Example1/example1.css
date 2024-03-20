@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-wrap{
+    display: flex;
+}
+
+.inner-logo img{
+    height: 100px;
+    width: auto;
+    margin-right: 20px;
+    padding: 10px;
+}
+.header-text{
+    margin-top: 20px;
+    align-items: center;
+}
+
+.header-text span,h1{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.header-text span{
+    color: gray;
+}
+
+.header-text h1{
+    color: rgb(19, 95, 134);
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.header-menu ul{
+    list-style-type: none;
+    display: flex;
+    font-size: 10px;
+}
+
+.header-menu{
+    margin-left: 490px;
+    margin-top:1px;
+}
+
+.menu-text li a{
+    text-decoration: none;
+    padding: 1px;
+    color: black ;
+}
+
+#dateInfo{
+    margin-top: 70px;
+    margin-left: 250px;
+    font-size: 10px;
+}
+
+/* CSS MENU-MAIN */
+
+.menu-main ul{
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(0, 156, 207);
+    height: 40px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.menu-main ul a{
+    padding: 10px ;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border: solid 1px aliceblue;
+    border-collapse: collapse;
+
+}
+
+/* END CSS MENU-MAIN */
+
+
+/* Left-side */
+    .box-leftside-container{
+        padding-top: 0;
+        float: left;
+        width: 20%;
+    }   
+    .box-leftside-container table{
+        font-family: sans-serif;
+        border-collapse: collapse;
+        overflow: hidden;
+        width: 80%;
+    }
+    .box-leftside-container table th{
+        background-color: rgb(235, 245, 249);
+        align-items: center;
+        padding: 10px;
+        border: 1px solid;
+        border-color: #ddd;
+        font-size: 15px;
+    }
+/* End Left-side */
+
+/* Right-side */
+.right-side{
+    float: right;
+    width: 80%;
+    margin-top: 0;
+    margin-left: 0;
+}
+.button-left{
+    float: left;
+}
+.button-right{
+    float: right;
+    display: flex;
+}
+
+.table{
+    width: 100%;
+    overflow-y: auto;
+    max-height: 530px;
+    padding-top: 2px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead{
+    border: solid 1px #2ed8f6;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.table th,td{
+    border: solid 1px #2ed8f6;
+    padding: 5px;
+
+}
+
+.table tfoot .tfoot1 {
+    float: left;
+    padding: 3px;
+    padding-right: 20px;
+}
+.table tfoot .tfoot2 {
+    float: center;
+    padding: 3px;
+}
+.table tfoot .tfoot3 {
+    float: right;
+    padding: 3px;
+}
+/* End Right-side */
+

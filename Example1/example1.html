@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bài tập thực tập code</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="example1.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header">
+            <div class="haeder-main">
+                <div class="container-fluid">
+                    <div class="inner-wrap">
+                        <div class="inner-logo">
+                            <img src="Quoc_Huy_Viet_Nam_Chuan.png">
+                            
+                        </div>
+                        <div class="header-text">
+                            <span>BỘ TƯ PHÁP - MINISTRY OF JUSTICE</span>
+                            <h1><i>Phần mềm hỗ trợ Pháp điển hệ thống quy phạm pháp luật</i></h1>
+                        </div>
+                        <div class="header-menu">
+                            <ul class="menu-text">
+                                <li>
+                                    <a href=""><strong>Cục kiểm tra văn bản quy phạm ...</strong></a>
+                                </li>
+                                <li>
+                                    <a href="">  | <i class='bx bx-lock-alt'></i>quantriphapdien |</a>
+                                </li>
+                                <li>
+                                    <a href="">Đăng xuất |</a>
+                                </li>
+                                <li>
+                                    <a href="">Trợ giúp</a>
+                                </li>
+                            </ul>
+                            <div id="dateInfo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end-header -->
+        <!-- menu -->
+        <div class="menu-main">
+            <ul>
+                <li>
+                    <a href=""><i class='bx bx-home' style="font-size: 15px; color: #dddddd;align-items: center;"></i>TRANG CHỦ</a>
+                </li>
+                <li>
+                    <a href=""><i class='bx bxs-bookmarks' style="font-size: 15px; color: blue;align-items: center;"></i>CHỦ ĐỀ</a>
+                </li>
+                <li>
+                    <a href=""><i class='bx bxs-folder-open' style="font-size: 15px; color: yellow;align-items: center;"></i>ĐỀ MỤC</a>
+                </li>
+                <li>
+                    <a href=""><i class='bx bxs-calendar' style="font-size: 15px; color: #dddddd;align-items: center;"></i>PHÂN CÔNG XDĐM</a>
+                </li>
+                <li>
+                    <a href=""><i class='bx bx-receipt'style="font-size: 15px; color: #dddddd;align-items: center;" ></i>THẨM ĐỊNH KQPĐ</a>
+                </li>
+                <li>
+                    <a href=""><i class='bx bxs-book-bookmark' style="font-size: 15px; color: green;align-items: center;"></i>BỘ PHÁP ĐIỂN</a>
+                </li>
+                <li>
+                    <a href="">DANH MỤC</a>
+                </li>
+                <li>
+                    <a href="">QUẢN TRỊ</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end menu -->
+
+
+    <div class="box-main">
+        <!-- left-side -->
+        <nav class="box-leftside-container">
+            
+            <table>
+                <thread>
+                    <tr>
+                        <th>Cơ quan, đơn vị</th>
+                    </tr>
+                </thread>
+                <thread>
+                    <tr>
+                        <th>Loại văn bản</th>
+                    </tr>
+                </thread>
+                <thread>
+                    <tr>
+                        <th>Loại cấu trúc văn bản</th>
+                    </tr>
+                </thread>
+                <thread>
+                    <tr>
+                        <th>Tài liệu tham khảo</th>
+                    </tr>
+                </thread>
+                <thread>
+                    <tr>
+                        <th>Văn bản mới ban hành</th>
+                    </tr>
+                </thread>
+                <thread>
+                    <tr>
+                        <th>Thứ bậc pháp lý</th>
+                    </tr>
+                </thread>
+            </table>
+        </nav>
+        <!-- end left-side -->
+
+        <!-- right side -->
+        <div class="right-side">
+            <h1><b>QUẢN LÝ THỨ BẬC PHÁP LÝ CỦA VĂN BẢN QPPL</b></h1>
+            <div class="button-left">
+                <button type="button" onclick="nhapThongTinVanBan()"><i class='bx bx-plus' style="font-size: 10px; color: red;align-items: center;"></i>Thêm</button>
+                <button type="button" onclick="suaThongTinVanBan()"><i class='bx bxs-pencil' style="font-size: 10px; color: red;align-items: center;"></i>Sửa</button>
+                <button type="button" onclick="xoaThongTinVanBan()"><i class='bx bxs-trash' style="font-size: 10px; color: red;align-items: center;"></i>Xoá</button>
+            </div>    
+            <div class="button-right">
+                <search class="search">
+                    <form>
+                      <input name="searchtag" id="searchtag" placeholder="Tìm Tên đầy đủ">
+                    </form>
+                  </search>
+                  <select id="loc">
+                    <option value="">---Lọc theo Trạng thái---</option>
+                  </select>
+            </div>
+
+            <div class="table">
+                <table style="overflow-y: auto;">
+                    <thead>
+                        <tr>
+                            <th class="heading-table" colspan="12">Kéo cột lên để xem theo nhóm</th>
+                        </tr>
+                        <tr>
+                            <th><input type="checkbox" style="align-items: center;"></th>
+                            <th>Loại văn bản <i class='bx bx-chevron-down' style="align-items: end;" ></i></th>
+                            <th>Tên đầy đủ <i class='bx bx-chevron-down' style="align-items: end;" ></i></th>
+                            <th>Cơ quan ban hành <i class='bx bx-chevron-down' style="align-items: end;" ></i></th>
+                            <th>Thứ bậc PL <i class='bx bx-chevron-down' style="align-items: end;" ></i></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th><i class='bx bxs-notepad' onclick="suaThongTinVanBan()"></i></th>
+                            <th><i class='bx bx-x' onclick="xoaThongTinVanBan()"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody id="maintable"></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="12">
+                                <div class="tfoot1">
+                                    <button class="arrow-btn" id="prev-btn"><i class='bx bxs-left-arrow-circle' ></i></button>
+                                    <button class="arrow-btn" id="prev-btn"><i class='bx bx-chevron-left'></i></button>
+                                    <button>1</button>
+                                    <button>2</button>
+                                    <button class="arrow-btn" id="prev-btn" ><i class='bx bx-chevron-right'></i></button>
+                                    <button class="arrow-btn" id="prev-btn"><i class='bx bxs-right-arrow-circle' ></i></i></button>
+                                </div>
+                                <div class="tfoot2">
+                                    <select id="page">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15" selected>15</option>
+                                      </select>
+                                      <span>Bản ghi/Trang</span>
+                                </div>
+                                <div class="tfoot3">
+                                    <span right-tfoot>1-15/19 bản ghi <i class='bx bx-refresh' ></i></span>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                    
+                </table>
+            </div>
+        </div>
+	
+        <!-- end right side -->
+       
+    </div>
+    </body>
+    <script src="example1.js"></script>
+</html>
